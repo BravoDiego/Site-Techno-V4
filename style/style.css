@@ -98,7 +98,7 @@ header nav #logo #logo_img img {
 }
 
 header nav #logo #logo_txt {
-    width: 45%;
+    width: 50%;
 }
 
 header nav #logo #logo_txt h1 {
@@ -225,6 +225,53 @@ main section article ul li a {
     color: var(--blue);
 }
 
+main section#section-ressources {
+    width: 100%;
+    display: block;
+}
+
+main section#section-ressources article#ressources {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main section#section-ressources article#ressources .container {
+    padding: 15px;
+}
+main section#section-ressources article#ressources .container a {
+    text-decoration: none;
+}
+
+main section#section-index article#index {
+    max-width: 80%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section#section-index {
+    width: 100%;
+}
+main section#section-index article#index div {
+    display: flex;
+    flex-wrap: wrap;
+}
+main section#section-index article#index div .image {
+    width: 20%;
+}
+main section#section-index article#index div > p {
+    padding: 10%;
+    max-width: 70%;
+}
+main section#section-index article#index div .image > img { 
+    width: 100%;   
+}
+
 @media all and (max-width: 1230px) {
     header nav #logo {
         width: 40%;
@@ -255,6 +302,12 @@ main section article ul li a {
 
     main section article p, main section article ul li {
         font-size: 12px;
+    }
+    main section#section-index article#index div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -358,6 +411,12 @@ main section article ul li a {
 
     header nav ul.menu {
         padding-top: 80px;
+    }
+    main section#section-index article#index div > p {
+        padding: 10px;
+    }
+    main section#section-index article#index {
+        max-width: 100%;
     }
 }
 
